@@ -4,7 +4,7 @@ config:
     load:
       - SELECT uuid AS host_uuid FROM system_info;
       - SELECT hostname AS hostname FROM system_info;
-  options: #TEST
+  options:
     disable_distributed: false
     distributed_interval: 10
     distributed_plugin: tls
